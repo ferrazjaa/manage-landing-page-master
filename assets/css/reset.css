@@ -1,0 +1,30 @@
+/* Vai zerar todo padrão de página do css */
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;   
+}
+
+
+/*
+  Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+html{
+  background: transparent;
+}
