@@ -4,17 +4,21 @@
     gap: 50px;
     margin-top: 7%;
 }
-
+.home__chamada{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .home__titulo{
     color: var(--color-dark-blue);
     font-size: 60px;
-    margin-bottom: 50px;
 }
 
 .home__paragrafo{
     color: var(--color-grayish-blue);
     padding-right: 30px;
-    margin-bottom: 50px;
+    line-height: 1.8;
     text-align: justify;
     width: 70%;
 }
@@ -23,6 +27,12 @@
     .home{
         flex-direction: column;
     }
+
+    .home__chamada{
+        align-items: center;
+        gap: 20px;
+    }
+
     .home__imagens{
         order: -1;
     }
@@ -30,4 +40,18 @@
     .home figure img{
         width: 80%;
     }
+
+    .home__titulo{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .home__paragrafo{
+        padding: 0;
+        text-align: justify;
+        text-indent: 4px;
+        width: 90%;
+    }
+    
+
 }

@@ -20,9 +20,10 @@
     display: flex;
     font-weight: 500;
     gap: 20px;
-    list-style: none;
     padding: 0;
 }
+
+
 
 .navigation__item:hover {
     color: var(--color-grayish-blue);
@@ -32,10 +33,7 @@
 
 /* Estilos para telas menores */
 @media screen and (max-width: 768px) {
-    /* .header {
-        margin-top: 2.5%;
-    } */
-
+  
     .menu-button {
         display: block; /* Exibe o botão de sanduíche em telas pequenas */
         position: relative;

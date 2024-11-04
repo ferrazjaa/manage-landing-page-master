@@ -1,32 +1,32 @@
-:root{
+:root {
     --color-bright-red: hsl(12, 88%, 59%);
     --color-dark-blue: hsl(228, 39%, 23%);
 
-    --color-grayish-blue:hsl(227, 12%, 61%);
-    --color-very-dark-blue: hsl(233,12%,13%);
-    --color-very-pale-red: hsl(13,100%,96%);
-    --very-light-gray: hsl(0,0%,98%);
+    --color-grayish-blue: hsl(227, 12%, 61%);
+    --color-very-dark-blue: hsl(233, 12%, 13%);
+    --color-very-pale-red: hsl(13, 100%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
 
     --padding-button: 15px 30px;
 
-    
+
 }
 
-body{
+body {
+    background: url(../images/bg-tablet-pattern.svg);
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
 }
 
 
-body{
-    background: url(../images/bg-tablet-pattern.svg);
-} 
 
-section{
+section {
     padding: 0 7%;
 }
 
-.getStarted-button{
+
+
+.getStarted-button {
     background-color: var(--color-bright-red);
     border: none;
     border-radius: 20px;
@@ -36,25 +36,31 @@ section{
     padding: var(--padding-button);
 }
 
+.getStarted-button:hover, .getStarted-button:focus{
+    opacity: 0.8;
+}
+
 @media screen and (min-width:0) {
-    body{
+    body {
         background-size: contain;
         background-position-x: right;
     }
 
-    .simplify{
+    .simplify {
         background-color: var(--color-bright-red);
         background-image: url(../images/bg-simplify-section-mobile.svg);
     }
 }
+
 @media screen and (min-width:768px) {
-    body{
+    body {
         background-repeat: no-repeat;
         background-position-x: right;
-        background-position-x: top;
+        background-position-y: top;
         background-size: auto;
     }
-    .simplify{
+
+    .simplify {
         background-image: url(../images/bg-simplify-section-desktop.svg);
     }
 }
