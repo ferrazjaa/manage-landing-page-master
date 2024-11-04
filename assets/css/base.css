@@ -7,29 +7,53 @@
     --color-very-pale-red: hsl(13,100%,96%);
     --very-light-gray: hsl(0,0%,98%);
 
+    --padding-button: 15px 30px;
+
     
 }
 
 body{
     font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
 }
 
 
-main{
+body{
     background: url(../images/bg-tablet-pattern.svg);
-}
+} 
 
 section{
-    padding: 0 10%;
+    padding: 0 7%;
+}
+
+.getStarted-button{
+    background-color: var(--color-bright-red);
+    border: none;
+    border-radius: 20px;
+    color: var(--very-light-gray);
+    cursor: pointer;
+    font-weight: 700;
+    padding: var(--padding-button);
 }
 
 @media screen and (min-width:0) {
+    body{
+        background-size: contain;
+        background-position-x: right;
+    }
+
     .simplify{
         background-color: var(--color-bright-red);
         background-image: url(../images/bg-simplify-section-mobile.svg);
     }
 }
 @media screen and (min-width:768px) {
+    body{
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-x: top;
+        background-size: auto;
+    }
     .simplify{
         background-image: url(../images/bg-simplify-section-desktop.svg);
     }

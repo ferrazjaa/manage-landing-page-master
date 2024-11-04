@@ -1,0 +1,33 @@
+.home{
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    margin-top: 7%;
+}
+
+.home__titulo{
+    color: var(--color-dark-blue);
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.home__paragrafo{
+    color: var(--color-grayish-blue);
+    padding-right: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+    width: 70%;
+}
+
+@media screen and (max-width:768px) {
+    .home{
+        flex-direction: column;
+    }
+    .home__imagens{
+        order: -1;
+    }
+
+    .home figure img{
+        width: 80%;
+    }
+}

@@ -1,9 +1,71 @@
-.cabecalho{
+.header {
     align-items: center;
+    cursor: pointer;
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
 }
 
-.menu__lista{
+.header__navigation {
+    display: flex;
+}
+
+.menu-button {
+    display: none; /* Oculta o botão de sanduíche em telas grandes */
+}
+
+.navigation__list {
+    background-color: transparent;
+    color: var(--color-dark-blue);
+    display: flex;
+    font-weight: 500;
+    gap: 20px;
     list-style: none;
+    padding: 0;
+}
+
+.navigation__item:hover {
+    color: var(--color-grayish-blue);
+}
+
+
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    /* .header {
+        margin-top: 2.5%;
+    } */
+
+    .menu-button {
+        display: block; /* Exibe o botão de sanduíche em telas pequenas */
+        position: relative;
+        z-index: 2;
+    }
+
+    .navigation__list {
+        align-items: center;
+        background-color: #fff;
+        display: none; /* Oculta o menu suspenso em telas pequenas */
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        width: 90%;
+      
+        /* border-radius: 8px;
+        */
+    
+    }
+        
+
+    /* Exibe o menu quando a classe "open" é adicionada */
+    .navigation__list.open {
+        display: flex;
+    }
+
+    .header button {
+        display: none;
+    }
 }

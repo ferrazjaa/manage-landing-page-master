@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/footer.css">
 
 
@@ -24,6 +25,7 @@
     rel="stylesheet">
 
   <title>Frontend Mentor | Manage landing page</title>
+
 
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -41,22 +43,27 @@
 
 <body>
 
-  <header class="cabecalho"> <!--Início do cabeçalho-->
+  <header class="header"> <!--Início do cabeçalho-->
     <h1>
       <a href="#"><img src="assets/images/logo.svg" alt="Logo manage"></a>
     </h1>
-    
-    <nav class="cabecalho__menu"> <!--Início da navegação-->
-      <ul class="menu__lista">
-        <li>Pricing</li>
-        <li>Product</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Community</li>
+
+
+    <img src="assets/images/icon-hamburger.svg" alt="Ícone menu hamburger" id="menu-button" class="menu-button">
+
+ 
+
+    <nav class="header__navigation"> <!--Início da navegação-->
+      <ul class="navigation__list" id="menu">
+        <li class="navigation__item">Pricing</li>
+        <li class="navigation__item">Product</li>
+        <li class="navigation__item">About Us</li>
+        <li class="navigation__item">Careers</li>
+        <li class="navigation__item">Community</li>
       </ul>
     </nav> <!--Fim da navegação-->
 
-    <button>Get Started</button>
+    <button type="button" class="getStarted-button">Get Started</button>
   </header><!--Fim do cabeçalho-->
 
 
@@ -64,19 +71,19 @@
     <section class="home"><!--Início home-->
 
       <div class="home__chamada"> <!--Início chamada home-->
-        <h2>Bring everyone together to build better products.</h2>
+        <h2 class="home__titulo">Bring everyone together to build better products.</h2>
 
-        <p>
+        <p class="home__paragrafo">
           Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.
         </p>
 
-        <button>Get Started</button>
+        <button class="home__button getStarted-button">Get Started</button>
       </div><!--Fim chamada home-->
 
-      <div class="home__imagens"><!--Início imagens home-->
+      <figure class="home__imagens"><!--Início imagens home-->
         <img src="assets/images/illustration-intro.svg" alt="Imagens de gráficos ilustrativos">
-      </div><!--Fim imagens home-->
+      </figure><!--Fim imagens home-->
 
     </section> <!--Fim seção home-->
 
@@ -200,7 +207,14 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Jessica Ferraz</a>.
+
+
+    
   </div>
+
+
+  <!-- JAVASCRIPT -->
+  
 </body>
 
 </html>
