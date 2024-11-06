@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/diferencial.css">
   <link rel="stylesheet" href="assets/css/footer.css">
 
 
@@ -51,7 +52,7 @@
 
     <img src="assets/images/icon-hamburger.svg" alt="Ícone menu hamburger" id="menu-button" class="menu-button">
 
- 
+
 
     <nav class="header__navigation"> <!--Início da navegação-->
       <ul class="navigation__list" id="menu">
@@ -68,7 +69,7 @@
 
 
   <main>
-    <section class="home"><!--Início home-->
+    <section class="home secao-container"><!--Início home-->
 
       <div class="home__chamada"> <!--Início chamada home-->
         <h2 class="home__titulo">Bring everyone together to build better products.</h2>
@@ -87,38 +88,63 @@
 
     </section> <!--Fim seção home-->
 
-    <section class="diferencial"><!--Início seção diferencial-->
-      <h3>What’s different about Manage?</h3>
+    <section class="diferencial secao-container"><!--Início seção diferencial-->
+      <div class="diferencial_intro">
+        <h3 class="diferencial_titulo">What’s different about Manage?</h3>
 
-      <p>
-        Manage provides all the functionality your team needs, without
-        the complexity. Our software is tailor-made for modern digital
-        product teams.
-      </p>
-
-      <div class="diferencial__lista"> <!--Início Lista diferencial-->
-        <h4>01 Track company-wide progress</h4>
-        <p>See how your day-to-day tasks fit into the wider vision. Go from
-          tracking progress at the milestone level all the way done to the
-          smallest of details. Never lose sight of the bigger picture again.
+        <p class="diferencial_paragrafo home__paragrafo">
+          Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.
         </p>
+      </div>
 
-        <h4>02
-          Advanced built-in reports
-        </h4>
-        <p>Set internal delivery estimates and track progress toward company
-          goals. Our customisable dashboard helps you build out the reports
-          you need to keep key stakeholders informed.
-        </p>
 
-        <h4>03
-          Everything you need in one place</h4>
-        <p>
-          Stop jumping from one service to another to communicate, store files,
-          track tasks and share documents. Manage offers an all-in-one team
-          productivity solution.
-        </p>
-      </div> <!--Fim Lista diferencial-->
+      <article class="diferencial__lista"> <!--Início Lista diferencial-->
+        <section>
+          <div class="numero-titulo">
+            <span class="diferencial__lista-numero">01</span>
+            <h4 class="diferencial__lista--titulo">
+              Track company-wide progress
+            </h4>
+
+          </div>
+
+          <p class="home__paragrafo diferencial__lista-paragrafo">See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </section>
+
+        <section>
+          <div class="numero-titulo">
+            <span class="diferencial__lista-numero">02</span>
+            <h4 class="diferencial__lista--titulo">
+              Advanced built-in reports
+            </h4>
+          </div>
+
+          <p class="home__paragrafo diferencial__lista-paragrafo">Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </section>
+
+        <section>
+          <div class="numero-titulo">
+            <span class="diferencial__lista-numero">03</span>
+            <h4 class="diferencial__lista--titulo">
+              Everything you need in one place</h4>
+          </div>
+
+          <p class="home__paragrafo diferencial__lista-paragrafo">
+            Stop jumping from one service to another to communicate, store files,
+            track tasks and share documents. Manage offers an all-in-one team
+            productivity solution.
+          </p>
+        </section>
+
+      </article> <!--Fim Lista diferencial-->
 
     </section><!--Fim seção diferencial -->
 
@@ -209,12 +235,12 @@
     Coded by <a href="#">Jessica Ferraz</a>.
 
 
-    
+
   </div>
 
 
   <!-- JAVASCRIPT -->
-  
+
 </body>
 
 </html>

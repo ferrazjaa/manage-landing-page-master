@@ -1,4 +1,4 @@
-.home{
+.secao-container{
     align-items: center;
     display: flex;
     gap: 50px;
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .home{
+    .secao-container{
         flex-direction: column;
     }
 
