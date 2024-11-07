@@ -13,14 +13,14 @@
 }
 
 body {
-    background: url(../images/bg-tablet-pattern.svg);
+    /* background: url(../images/bg-tablet-pattern.svg); */
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
 }
 
 
 
-section {
+.section-padding{
     padding: 0 7%;
 }
 

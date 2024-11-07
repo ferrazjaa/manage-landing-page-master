@@ -1,30 +1,33 @@
-.diferencial{
+.diferencial {
     align-items: flex-start;
     height: 100vh;
 }
-.diferencial_titulo{
+
+.diferencial__titulo {
     color: var(--color-dark-blue);
     font-size: 32px;
     margin-bottom: 30px;
 }
 
-.diferencial_paragrafo{
+.diferencial__paragrafo {
     padding-right: 0;
 }
 
-.numero-titulo{
+
+.diferencial__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 7%;
+}
+
+.numero-titulo {
     align-items: center;
     display: flex;
     gap: 25px;
 }
 
-.diferencial__lista{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.diferencial__lista-numero{
+.diferencial__lista-numero {
     background-color: var(--color-bright-red);
     border-radius: 20px;
     color: var(--very-light-gray);
@@ -32,13 +35,72 @@
     /* margin-right: 20px; */
 }
 
-.diferencial__lista--titulo{
+.diferencial__lista--titulo {
     color: var(--color-dark-blue);
 }
 
-.diferencial__lista-paragrafo{
+.diferencial__lista-paragrafo {
     margin-left: 100px;
-    margin-top: 12px ;
+    margin-top: 12px;
     padding: 0;
     width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .diferencial {
+        align-items: center;
+        height: auto;
+    }
+
+
+    .diferencial__intro {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diferencial__titulo {
+        font-size: 24px;
+        line-height: 1.55;
+        margin: 40px auto 15px auto;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .diferencial__paragrafo {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .diferencial__lista {
+        padding: 0;
+    }
+
+    .numero-titulo {
+        background-color: var(--color-very-pale-red);
+        gap: 0;
+        /* justify-content: flex-start; */
+        border-radius: 2.5rem 0 0 2.5rem;
+        margin-left: 15px;
+    }
+
+   
+    .diferencial__lista-numero{
+        padding: 8px 20px;
+    }
+    .diferencial__lista--titulo{
+        font-size: 15px;
+        padding-left: 18px;
+    }
+  
+
+    .diferencial__lista-paragrafo {
+        font-size: 14px; 
+        margin: auto;
+        padding-left: 15px ;
+        padding-right: 20px;
+        text-align: initial; 
+        text-indent: 0;
+    }
 }
