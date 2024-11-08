@@ -1,0 +1,62 @@
+.simplify{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 70px;
+
+    grid-template-areas: 
+    "paragrafo botao";
+    /* margin-left: auto; */
+}
+
+
+.simplify p{
+    color: var(--very-light-gray);
+    font-size: 35px;
+    grid-area: paragrafo;
+    margin-left: 10%;
+    font-weight: 700;
+}
+.simplify button{
+    background-color: var(--very-light-gray);
+    border: 0;
+    border-radius: 20px;
+    color: var(--color-bright-red);
+    cursor: pointer;
+    font-weight: 700;
+    justify-self: right;
+    margin-right: 13%;  
+    padding: var(--padding-button);
+
+    grid-area: botao;
+}
+
+.simplify button:hover{
+    opacity: 0.9;
+}
+
+@media screen and (max-width:768px) {
+    .simplify{
+        grid-template-columns: 1fr 1fr;
+        padding: 70px;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    .simplify{
+        grid-template-areas: 
+        "paragrafo"
+        "botao";
+        grid-template-columns: 1fr;
+        padding: 60px;
+    }
+    
+    .simplify p{
+        text-align: center;
+        margin: auto auto 30px auto;
+    }
+    .simplify button{
+        margin: 10px auto;
+    }
+    
+}

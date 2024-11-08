@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/diferencial.css">
+  <link rel="stylesheet" href="assets/css/depoimentos.css">
+  <link rel="stylesheet" href="assets/css/simplify.css">
   <link rel="stylesheet" href="assets/css/footer.css">
 
 
@@ -110,7 +112,8 @@
 
           </div>
 
-          <p class="home__paragrafo diferencial__lista-paragrafo">See how your day-to-day tasks fit into the wider vision. Go from
+          <p class="home__paragrafo diferencial__lista-paragrafo">See how your day-to-day tasks fit into the wider
+            vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
@@ -124,7 +127,8 @@
             </h4>
           </div>
 
-          <p class="home__paragrafo diferencial__lista-paragrafo">Set internal delivery estimates and track progress toward company
+          <p class="home__paragrafo diferencial__lista-paragrafo">Set internal delivery estimates and track progress
+            toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
@@ -149,45 +153,69 @@
     </section><!--Fim seção diferencial -->
 
     <section class="depoimentos section-padding"><!--Inicio seção depoimentos -->
-      <h3>What they’ve said</h3>
+      <h3 class="depoimentos__titulo">What they’ve said</h3>
 
-      <img src="assets/images/avatar-anisha.png" alt="Foto de Anisha">
-      <h4>Anisha Li</h4>
-      <p>
-        “Manage has supercharged our team’s workflow. The ability to maintain
-        visibility on larger milestones at all times keeps everyone motivated.”
-      </p>
+      <div class="carousel"><!--Inicio carousel-->
+        <div class="carousel-inner"><!--Inicio carousel-inner-->
 
-      <img src="assets/images/avatar-ali.png" alt="Foto de Ali">
-      <h4>Ali Bravo</h4>
-      <p>
-        “We have been able to cancel so many other subscriptions since using
-        Manage. There is no more cross-channel confusion and everyone is much
-        more focused.”
-      </p>
+          <article class="depoimentos__card carousel-item"><!--Anisha Li-->
+            <figure>
+              <img src="assets/images/avatar-anisha.png" alt="Foto de Anisha">
 
-      <img src="assets/images/avatar-richard.png" alt="Foto de Richard">
-      <h4>Richard Watts</h4>
-      <p>
-        “Manage allows us to provide structure and process. It keeps us organized
-        and focused. I can’t stop recommending them to everyone I talk to!”
-      </p>
+              <figcaption>Anisha Li</figcaption>
 
-      <img src="assets/images/avatar-shanai.png" alt="Foto de Shni">
-      <h4>Shanai Gough</h4>
-      <p>
-        “Their software allows us to track, manage and collaborate on our projects
-        from anywhere. It keeps the whole team in-sync without being intrusive.”
-      </p>
+            </figure>
+            
+            <p>
+              “Manage has supercharged our team’s workflow. The ability to maintain
+              visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+          </article>
 
-      <button>Get Started</button>
+          <article class="depoimentos__card carousel-item"> <!--Ali Bravo-->
+            <figure>
+              <img src="assets/images/avatar-ali.png" alt="Foto de Ali">
+              <figcaption>Ali Bravo</figcaption>
+            </figure>
+            <p>“We have been able to cancel so many other subscriptions since using
+              Manage. There is no more cross-channel confusion and everyone is much
+              more focused.”
+            </p>
+          </article>
+
+          <article class="depoimentos__card carousel-item"> <!--Richard Watts-->
+            <figure>
+              <img src="assets/images/avatar-richard.png" alt="Foto de Richard">
+              <figcaption>Richard Watts</figcaption>
+            </figure>
+            <p>“Manage allows us to provide structure and process. It keeps us organized
+              and focused. I can’t stop recommending them to everyone I talk to!”
+            </p>
+          </article>
+
+          <article class="depoimentos__card carousel-item"> <!--Shanai Gough-->
+            <figure>
+              <img src="assets/images/avatar-shanai.png" alt="Foto de Shanai">
+              <figcaption>Shanai Gough</figcaption>
+            </figure>
+            <p>“Their software allows us to track, manage and collaborate on our projects
+              from anywhere. It keeps the whole team in-sync without being intrusive.”
+            </p>
+          </article>
+
+        </div> <!--Fim carousel-inner-->
+      </div><!--Fim carousel-->
+
+
+
+      <button type="button" class="getStarted-button">Get Started</button>
 
     </section><!--Fim seção depoimentos -->
   </main>
 
   <section class="simplify">
     <p>Simplify how your team works today.</p>
-    <button>
+    <button type="button">
       Get Started
     </button>
   </section>
@@ -240,6 +268,7 @@
 
 
   <!-- JAVASCRIPT -->
+  <!-- <script src="assets/js/slide.js"></script> -->
 
 </body>
 

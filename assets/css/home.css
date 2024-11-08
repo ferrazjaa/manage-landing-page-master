@@ -37,9 +37,9 @@
         order: -1;
     }
 
-    .home figure img{
-        width: 80%;
-    }
+   .home__imagens img{
+        max-width: 100%;
+    } 
 
     .home__titulo{
         font-size: 32px;
@@ -55,3 +55,10 @@
     
 
 }
+
+
+/* @media screen and (max-width:425px) {
+.home figure img{
+    max-width: 315px;
+}
+} */

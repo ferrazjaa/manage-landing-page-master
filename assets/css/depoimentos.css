@@ -1,0 +1,63 @@
+.depoimentos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.depoimentos button {
+    margin: 30px auto 15% auto;
+} 
+
+.depoimentos__titulo{
+    color: var(--color-dark-blue);
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.depoimentos__card{
+    align-items: center;
+    background-color: var(--very-light-gray) ; 
+    display: flex;
+    flex-direction: column;
+}
+.depoimentos__card img{
+    max-width: 60%;
+}
+
+.depoimentos__card figcaption{
+    color: var(--color-very-dark-blue);
+   
+}
+.depoimentos__card p{
+    color: var(--color-grayish-blue);
+    
+}
+
+
+/* SLIDES */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    max-width: 1200px; /* Defina um limite máximo de largura */
+    margin: 0 auto; 
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 48%;
+    padding: 2rem;
+    text-align: center;
+ 
+    margin: 1.5rem;
+
+  
+}
