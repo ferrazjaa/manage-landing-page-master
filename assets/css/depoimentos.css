@@ -1,4 +1,4 @@
-.depoimentos{
+.depoimentos {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -7,9 +7,9 @@
 
 .depoimentos button {
     margin: 30px auto 15% auto;
-} 
+}
 
-.depoimentos__titulo{
+.depoimentos__titulo {
     color: var(--color-dark-blue);
     font-size: 30px;
     margin-bottom: 30px;
@@ -17,34 +17,52 @@
 
 }
 
-.depoimentos__card{
-    align-items: center;
-    background-color: var(--very-light-gray) ; 
-    display: flex;
-    flex-direction: column;
-}
-.depoimentos__card img{
-    max-width: 60%;
+.depoimentos__card {
+    background-color: var(--very-light-gray);
+    /* flex: 1; */
+    /* max-width: 300px; */
+    margin: 4% 2% ;
+    min-width: 580px;
+    /* padding: 25px; */
+    position: relative;
+    text-align: center;
 }
 
-.depoimentos__card figcaption{
+.depoimentos__card-foto {
+    border-radius: 50%;
+    height: 80px;
+    left: 50%;
+    /*Alinha horizontalmente*/
+    margin-bottom: 15px;
+    object-fit: cover;
+    position: absolute;
+    transform: translateX(-50%);
+    /*Alinha horizontalmente*/
+    top: -40px;
+    /* Move a imagem para fora do card */
+    width: 80px;
+}
+
+.depoimentos__card figcaption {
     color: var(--color-very-dark-blue);
-   
-}
-.depoimentos__card p{
-    color: var(--color-grayish-blue);
-    
+    margin-top: 60px;
+
 }
 
+.depoimentos__card p {
+    color: var(--color-grayish-blue);
+    margin: 25px;
+}
 
 /* SLIDES */
 
 .carousel {
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Defina um limite máximo de largura */
+    overflow: hidden;
     position: relative;
     width: 100%;
-    overflow: hidden; 
-    max-width: 1200px; /* Defina um limite máximo de largura */
-    margin: 0 auto; 
 }
 
 .carousel-inner {
@@ -52,12 +70,38 @@
     transition: transform 0.5s ease;
 }
 
-.carousel-item {
-    min-width: 48%;
-    padding: 2rem;
-    text-align: center;
- 
-    margin: 1.5rem;
+/* Indicadores para telas pequenas */
+@media (max-width: 425px) {
+    .depoimentos__card {
+        margin: 41px 10px;
+        min-width: 80%;
+    }
+    .dot {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+    }
 
-  
+    .dot span {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .dot span.active {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+/* Ocultar indicadores em telas maiores */
+@media (min-width: 426px) {
+    .dot {
+        display: none;
+    }
 }
