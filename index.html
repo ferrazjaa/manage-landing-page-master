@@ -152,12 +152,18 @@
 
     </section><!--Fim seção diferencial -->
 
-    <section class="depoimentos section-padding"><!--Inicio seção depoimentos -->
+    <section class="depoimentos "><!--Inicio seção depoimentos -->
       <h3 class="depoimentos__titulo">What they’ve said</h3>
 
 
-      <div class="carousel"><!--Inicio carousel-->
-        <div class="carousel-inner "><!--Inicio carousel-inner-->
+
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
 
           <article class="depoimentos__card"><!--Anisha Li-->
             <figure>
@@ -173,7 +179,7 @@
             </p>
           </article>
 
-          <article class="depoimentos__card"> <!--Ali Bravo-->
+          <article class="depoimentos__card first"> <!--Ali Bravo-->
             <figure>
               <img src="assets/images/avatar-ali.png" alt="Foto de Ali" class="depoimentos__card-foto">
               <figcaption>Ali Bravo</figcaption>
@@ -204,19 +210,22 @@
             </p>
           </article>
 
-        </div> <!--Fim carousel-inner-->
 
-        <!-- Indicadores -->
-        <div class="dot">
-          <span data-slide="0" class="active"></span>
-          <span data-slide="1"></span>
-          <span data-slide="2"></span>
-          <span data-slide="3"></span>
-        </div><!--Fim indicadores-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
 
-      </div><!--Fim carousel-->
-
-
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
 
       <button type="button" class="getStarted-button">Get Started</button>
 

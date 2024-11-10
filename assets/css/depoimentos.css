@@ -21,11 +21,12 @@
     background-color: var(--very-light-gray);
     /* flex: 1; */
     /* max-width: 300px; */
-    margin: 4% 2% ;
-    min-width: 580px;
+    margin: 4% 15px ;
+    /* min-width: 580px; */
     /* padding: 25px; */
     position: relative;
     text-align: center;
+    width: 506px;
 }
 
 .depoimentos__card-foto {
@@ -56,52 +57,103 @@
 
 /* SLIDES */
 
-.carousel {
+.slider{
     margin: 0 auto;
-    max-width: 1200px;
-    /* Defina um limite máximo de largura */
     overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.carousel-inner {
+    width: 1300px; /*do exemplo era 800*/
     display: flex;
-    transition: transform 0.5s ease;
 }
 
-/* Indicadores para telas pequenas */
-@media (max-width: 425px) {
-    .depoimentos__card {
-        margin: 41px 10px;
-        min-width: 80%;
+.slides{
+    width: 400%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+
+@media screen and (max-width:465px) {
+    .depoimentos__card{
+        width: 390px;
     }
-    .dot {
+    .slider{
+        width: 400px;
+    }
+    .manual-navigation{
         position: absolute;
-        bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 400px;
+        margin-top: 310px; 
         display: flex;
-        gap: 8px;
+        justify-content: center;
     }
 
-    .dot span {
-        width: 10px;
-        height: 10px;
-        background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 50%;
+    .manual-btn{
+        border: 2px solid var(--color-bright-red);
+        padding: 5px;
+        border-radius: 10px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: 1s;
     }
 
-    .dot span.active {
-        background-color: rgba(0, 0, 0, 0.7);
+  
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
     }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -25.50%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -51.5%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -77.75%;
+    }
+    
 }
+
+.navigation-auto div{
+    border: 2px solid var(--color-bright-red);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 310px; 
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--color-bright-red);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--color-bright-red);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--color-bright-red);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--color-bright-red);
+}
+
 
 /* Ocultar indicadores em telas maiores */
-@media (min-width: 426px) {
+/* @media (min-width: 426px) {
     .dot {
         display: none;
     }
-}
+} */
