@@ -1,16 +1,22 @@
-footer{
+footer {
     align-items: center;
     background-color: var(--color-very-dark-blue);
     display: grid;
     gap: 30px;
-    grid-template-areas: "f_logos f_menu f_input";
+    grid-template-areas:
+        "f_logos f_menu f_input"
+        "f_logos f_menu copyright";
+    grid-template-rows: 1fr 1fr;
     height: 100%;
     justify-items: center;
+    padding-top: 20px;
+    /* grid-template-columns: 3fr 5fr 5fr; */
 
 }
 
 /* LOGOS ******************************* */
-.footer__logos{
+
+.footer__logos {
     grid-area: f_logos;
     align-items: center;
     display: flex;
@@ -21,22 +27,22 @@ footer{
 }
 
 
-.redes a:not(:last-child)  {
+.redes a:not(:last-child) {
     margin-right: 10px;
 }
 
-.redes a{
+.redes a {
     color: var(--very-light-gray);
     cursor: pointer;
     font-size: 22px;
 }
 
-.redes a:hover{
-    color: var(--color-bright-red); 
+.redes a:hover {
+    color: var(--color-bright-red);
 }
 
 /* FOOTER MENU ************************* */
-.footer__menu{
+.footer__menu {
     grid-area: f_menu;
     color: var(--very-light-gray);
     font-weight: 300;
@@ -45,9 +51,9 @@ footer{
 
 }
 
-.footer__menu__lista{
+.footer__menu__lista {
     align-content: space-between;
-    align-items: center; 
+    align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -56,7 +62,8 @@ footer{
     width: 100%;
     height: 100%;
 }
-.footer__menu__lista li:hover{
+
+.footer__menu__lista li:hover {
     color: var(--color-bright-red);
     cursor: pointer;
 }
@@ -64,7 +71,7 @@ footer{
 
 
 /* CAMPO INPUTS ************************* */
-.footer__input{
+.footer__input {
     grid-area: f_input;
     align-items: center;
     display: flex;
@@ -74,7 +81,8 @@ footer{
     width: 100%;
 }
 
-.input-button{
+.input-button {
+    align-self: end;
     align-items: center;
     display: inline-flex;
     justify-content: space-around;
@@ -83,19 +91,19 @@ footer{
 
 
 
-.footer__input input{
+.input-button input {
     border: none;
     border-radius: 25px;
     padding: 16px;
 }
 
-.footer__input input::placeholder{
-    color: var(--color-grayish-blue);
+.input-button input::placeholder {
+    color: var(--placeholder-color);
     font-weight: 400;
-    
+
 }
 
-.footer__input button{
+.input-button button {
     background-color: var(--color-bright-red);
     border: none;
     border-radius: 18px;
@@ -105,21 +113,20 @@ footer{
     padding: 15px 22px;
 }
 
-.footer__input button:hover{
+.input-button button:hover {
     background: #f68e74;
 }
 
-.p-desktop, .p-mobile{
-    color: var(--very-light-gray) ;
-    font-size: 14px;
+.copyright {
+    grid-area: copyright;
+    color: var(--very-light-gray);
+    display: inline;
+    font-size: 12.5px;
     font-weight: 300;
     margin-left: 40px;
     opacity: 0.3;
 }
 
-.p-mobile{
-    display: none;
-}
 
 /* ATTRIBUTION */
 .attribution {
@@ -129,31 +136,77 @@ footer{
     padding: 16px;
     text-align: center;
     width: 100%;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
 
 
-  @media screen and (max-width:768px) {
-    footer{
-        grid-template-areas: 
-        "f_input"
-        "f_menu "
-        "f_logos" 
+@media screen and (max-width:768px) {
+    footer {
+        gap: 0;
+        grid-template-areas:
+            "f_input "
+            "f_menu "
+            "f_logos "
+            "copyright"
         ;
-
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1.5fr .5fr;
         justify-content: center;
+        padding-top: 0;
     }
-    .p-desktop{
-        display: none;
+
+    .footer__logos {
+        justify-content: space-between;
     }
-    .redes{
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
         order: -1;
     }
 
-    .p-mobile{
-        display: inline;
+    .redes a {
+        font-size: 40px;
+        margin: auto;
     }
-  }
+
+
+    .input-button {
+        /* align-self: initial; */
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .input-button input {
+        border-radius: 21px;
+        padding: 14px 51px;
+    }
+
+    .input-button input::placeholder {
+        text-align: left;
+    }
+
+    .input-button button {
+        padding: 16px 24px;
+    }
+
+    .footer__menu__lista {
+        align-content: space-around;
+        align-items: flex-start;
+    }
+
+    .copyright{
+        margin: auto;
+    }
+}
+
+#resultado{
+    color: red;
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+}

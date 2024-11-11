@@ -263,17 +263,19 @@
       </ul>
     </nav>
 
-    <div class="footer__input">
-      <div class="input-button">
-        <input type="text" placeholder="Updates in your inbox…" id="footer__input">
-        <button type="submit">Go</button>
-      </div>
+    <!-- <div class="footer__input"> </div> -->
+    <form class="input-button" autocomplete="off">
+      <input type="email" placeholder="Updates in your inbox…" id="email">
+      <button type="button" onclick="validarEmail()">Go</button>
+      <p id="resultado"></p>
+    </form>
+    
 
 
-      <p class="p-desktop">Copyright 2020. All Rights Reserved</p>
-    </div>
+    <!-- <p class="p-desktop">Copyright 2020. All Rights Reserved</p> -->
 
-    <p class="p-mobile">Copyright 2020. All Rights Reserved</p>
+
+    <p class="copyright">Copyright 2020. All Rights Reserved</p>
   </footer>
 
   <div class="attribution">
