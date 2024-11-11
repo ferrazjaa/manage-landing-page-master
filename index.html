@@ -27,21 +27,15 @@
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/1708746a55.js" crossorigin="anonymous"></script>
+
   <title>Frontend Mentor | Manage landing page</title>
 
 
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -242,19 +236,23 @@
 
 
   <footer>
-    <div class="footer__logos"> <!-- Inicio logos e redes sociais footer-->
-      <a href="#"><img src="assets/images/logo.svg" alt="Logo Manage"></a>
+    <address class="footer__logos"> <!-- Inicio logos e redes sociais footer-->
+      <a href="#"><img src="assets/images/logo-rodape.svg" alt="Logo Manage"></a>
 
-      <a href="#"><img src="assets/images/icon-facebook.svg" alt="Manage Facebook"></a>
-      <a href="#"><img src="assets/images/icon-youtube.svg" alt="Manage Youtube"></a>
-      <a href="#"><img src="assets/images/icon-twitter.svg" alt="Manage Twitter"></a>
-      <a href="#"><img src="assets/images/icon-pinterest.svg" alt="Manage Pinterest"></a>
-      <a href="#"><img src="assets/images/icon-instagram.svg" alt="Manage Instagram"></a>
+      <div class="redes">
 
-    </div><!-- Fim logos e redes sociais footer-->
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+
+    </address><!-- Fim logos e redes sociais footer-->
 
     <nav class="footer__menu">
-      <ul>
+      <ul class="footer__menu__lista">
         <li>Home</li>
         <li>Pricing</li>
         <li>Products</li>
@@ -266,16 +264,17 @@
     </nav>
 
     <div class="footer__input">
-      <input type="text" placeholder="Updates in your inbox…">
-      <button>Go</button>
+      <div class="input-button">
+        <input type="text" placeholder="Updates in your inbox…" id="footer__input">
+        <button type="submit">Go</button>
+      </div>
 
-      Copyright 2020. All Rights Reserved
+
+      <p class="p-desktop">Copyright 2020. All Rights Reserved</p>
     </div>
 
-
+    <p class="p-mobile">Copyright 2020. All Rights Reserved</p>
   </footer>
-
-
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -286,8 +285,13 @@
   </div>
 
 
+
+
+
+
   <!-- JAVASCRIPT -->
   <script src="assets/js/slide.js"></script>
+  <script src="assets/js/validar-email.js"></script>
 
 </body>
 

@@ -1,3 +1,159 @@
 footer{
+    align-items: center;
     background-color: var(--color-very-dark-blue);
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "f_logos f_menu f_input";
+    height: 100%;
+    justify-items: center;
+
 }
+
+/* LOGOS ******************************* */
+.footer__logos{
+    grid-area: f_logos;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.redes a:not(:last-child)  {
+    margin-right: 10px;
+}
+
+.redes a{
+    color: var(--very-light-gray);
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.redes a:hover{
+    color: var(--color-bright-red); 
+}
+
+/* FOOTER MENU ************************* */
+.footer__menu{
+    grid-area: f_menu;
+    color: var(--very-light-gray);
+    font-weight: 300;
+    height: 60%;
+    width: 100%;
+
+}
+
+.footer__menu__lista{
+    align-content: space-between;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.footer__menu__lista li:hover{
+    color: var(--color-bright-red);
+    cursor: pointer;
+}
+
+
+
+/* CAMPO INPUTS ************************* */
+.footer__input{
+    grid-area: f_input;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.input-button{
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+
+
+.footer__input input{
+    border: none;
+    border-radius: 25px;
+    padding: 16px;
+}
+
+.footer__input input::placeholder{
+    color: var(--color-grayish-blue);
+    font-weight: 400;
+    
+}
+
+.footer__input button{
+    background-color: var(--color-bright-red);
+    border: none;
+    border-radius: 18px;
+    color: var(--very-light-gray);
+    cursor: pointer;
+    font-weight: 700;
+    padding: 15px 22px;
+}
+
+.footer__input button:hover{
+    background: #f68e74;
+}
+
+.p-desktop, .p-mobile{
+    color: var(--very-light-gray) ;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 40px;
+    opacity: 0.3;
+}
+
+.p-mobile{
+    display: none;
+}
+
+/* ATTRIBUTION */
+.attribution {
+    background-color: var(--color-very-dark-blue);
+    color: var(--very-light-gray);
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+  @media screen and (max-width:768px) {
+    footer{
+        grid-template-areas: 
+        "f_input"
+        "f_menu "
+        "f_logos" 
+        ;
+
+        justify-content: center;
+    }
+    .p-desktop{
+        display: none;
+    }
+    .redes{
+        order: -1;
+    }
+
+    .p-mobile{
+        display: inline;
+    }
+  }
