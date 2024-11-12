@@ -123,3 +123,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 - Slide versão dispositivos maiores adaptado de: [Automatic Image Slider in HTML and CSS only](https://www.thecoderashok.com/blog/automatic-image-slider-in-html-css-only#google_vignette)
 
+-[Background-position - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
