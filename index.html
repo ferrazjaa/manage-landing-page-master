@@ -46,12 +46,21 @@
     </h1>
 
 
-    <img src="assets/images/icon-hamburger.svg" alt="Ícone menu hamburger" id="menu-button" class="menu-button">
+    <!--Início da navegação-->
+    <nav class="menu">
 
+       <!--Checkbox para abrir o menu  -->
+      <input type="checkbox" class="menu-faketrigger">
 
+      <div class="menu-lines">
+        <!-- MENU HAMBURGER     -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <nav class="header__navigation"> <!--Início da navegação-->
-      <ul class="navigation__list" id="menu">
+      <!-- MENU    -->
+      <ul class="navigation__list">
         <li class="navigation__item">Pricing</li>
         <li class="navigation__item">Product</li>
         <li class="navigation__item">About Us</li>
@@ -263,16 +272,16 @@
       </ul>
     </nav>
 
-    <div class="footer__input"> 
+    <div class="footer__input">
       <form class="input-button" autocomplete="off">
         <input type="email" placeholder="Updates in your inbox…" id="email">
         <button type="button" onclick="validarEmail()">Go</button>
-        
+
       </form>
       <p id="resultado"></p>
-    </div> 
-    
-    
+    </div>
+
+
 
 
     <!-- <p class="p-desktop">Copyright 2020. All Rights Reserved</p> -->

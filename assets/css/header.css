@@ -6,12 +6,14 @@
     margin-top: 5%;
 }
 
-.header__navigation {
+.menu {
     display: flex;
 }
 
-.menu-button {
-    display: none; /* Oculta o botão de sanduíche em telas grandes */
+.menu-faketrigger,
+.menu-lines {
+    display: none;
+    /* Oculta o botão de sanduíche em telas grandes */
 }
 
 .navigation__list {
@@ -33,37 +35,94 @@
 
 /* Estilos para telas menores */
 @media screen and (max-width: 768px) {
-  
-    .menu-button {
-        display: block; /* Exibe o botão de sanduíche em telas pequenas */
+    .header{
+        align-items: flex-start;
         position: relative;
-        z-index: 2;
     }
 
     .navigation__list {
         align-items: center;
         background-color: #fff;
-        display: none; /* Oculta o menu suspenso em telas pequenas */
+        display: none; /* Só irá aparecer quando estiver check o menu-faketrigger*/
         flex-direction: column;
-        margin-top: 20px;
         padding: 20px;
         position: absolute;
         right: 10px;
+        transition: all ease .2s; /*para o menu aparecer de uma  forma mais bonita*/
         top: 60px;
-        width: 90%;
-      
-        /* border-radius: 8px;
-        */
-    
+        width: 90%; 
+        z-index: 998;
+     
     }
-        
 
-    /* Exibe o menu quando a classe "open" é adicionada */
-    .navigation__list.open {
+    .header .getStarted-button{
+        display: none; /* O botão get-started não aparecerá */
+    }
+
+    /* HAMBURGER************************************ */
+    .menu .menu-faketrigger {
+        cursor: pointer;
+        display: block;
+        height: 35px;
+        /*mesma altura do hmaburger*/
+        opacity: 0;
+        /*Para não aparecer e deixar quem está atrás (hamburger) visível*/
+        position: absolute;
+        width: 35px;
+        z-index: 1000;
+        /*fica acima de todos*/
+
+    }
+
+    /*vai aplicar no checkbok e  em seus irmaos (seleciona todos os elementos diretos) */
+   
+    /* HAMBURGER */
+    .menu .menu-lines {
+        display: block;
+        height: 35px;
+        position: absolute;
+        width: 35px;
+        z-index: 999;
+    }
+
+    /* 3 linhas */
+    .menu .menu-lines span {
+        background-color: var(--color-dark-blue);
+        border-radius: 3px;
+        display: block;
+        height: 5px;
+        margin-bottom: 10px;
+        width: 35px;
+        transition: all ease .2s; /*tempo para a transição*/
+
+    }
+
+    /* Transformando as 3 linhas em X *******************/
+ 
+
+    /* linha 1 */
+    .menu .menu-faketrigger:checked~.menu-lines span:nth-child(1) {
+        transform-origin: 0 0%;
+        /*A parte de esquerda fica parada e a direita desce com a rotacao*/
+        transform: rotate(45deg) scaleX(1.25);
+        /* scale para deixar do mesmo tamanho   */
+    }
+
+    /* linha 2 */
+    .menu .menu-faketrigger:checked~.menu-lines span:nth-child(2) {
+        opacity: 0;
+    }
+
+    /* linha 3 */
+    .menu .menu-faketrigger:checked~.menu-lines span:nth-child(3) {
+        transform-origin: 0 100%;
+        /*A parte de esquerda fica parada e a direita sobe com a rotacao*/
+        transform: rotate(-45deg) scaleX(1.25);
+    }
+
+    .menu .menu-faketrigger:checked~.navigation__list{
         display: flex;
     }
 
-    .header button {
-        display: none;
-    }
+    
 }
