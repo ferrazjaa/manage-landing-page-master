@@ -49,8 +49,8 @@
     <!--Início da navegação-->
     <nav class="menu">
 
-       <!--Checkbox para abrir o menu  -->
-      <input type="checkbox" class="menu-faketrigger">
+      <!--Checkbox para abrir o menu  -->
+      <input type="checkbox" class="menu-faketrigger" id="menu-toggle">
 
       <div class="menu-lines">
         <!-- MENU HAMBURGER     -->
@@ -67,13 +67,18 @@
         <li class="navigation__item">Careers</li>
         <li class="navigation__item">Community</li>
       </ul>
+
+
+      <div class="overlay"></div>
     </nav> <!--Fim da navegação-->
 
+
     <button type="button" class="getStarted-button">Get Started</button>
+
   </header><!--Fim do cabeçalho-->
 
 
-  <main>
+  <main id="main-content">
     <section class="home secao-container section-padding"><!--Início home-->
 
       <div class="home__chamada"> <!--Início chamada home-->
@@ -93,146 +98,149 @@
 
     </section> <!--Fim seção home-->
 
-    <section class="diferencial secao-container "><!--Início seção diferencial-->
-      <div class="diferencial__intro section-padding">
-        <h3 class="diferencial__titulo">What’s different about Manage?</h3>
+    <div class="segundo-background">
+      <section class="diferencial secao-container "><!--Início seção diferencial-->
+        <div class="diferencial__intro section-padding">
+          <h3 class="diferencial__titulo">What’s different about Manage?</h3>
 
-        <p class="diferencial__paragrafo home__paragrafo">
-          Manage provides all the functionality your team needs, without
-          the complexity. Our software is tailor-made for modern digital
-          product teams.
-        </p>
-      </div>
+          <p class="diferencial__paragrafo home__paragrafo">
+            Manage provides all the functionality your team needs, without
+            the complexity. Our software is tailor-made for modern digital
+            product teams.
+          </p>
+        </div>
 
 
-      <article class="diferencial__lista"> <!--Início Lista diferencial-->
-        <section>
-          <div class="numero-titulo">
-            <span class="diferencial__lista-numero">01</span>
-            <h4 class="diferencial__lista--titulo">
-              Track company-wide progress
-            </h4>
+        <article class="diferencial__lista"> <!--Início Lista diferencial-->
+          <section>
+            <div class="numero-titulo">
+              <span class="diferencial__lista-numero">01</span>
+              <h4 class="diferencial__lista--titulo">
+                Track company-wide progress
+              </h4>
 
+            </div>
+
+            <p class="home__paragrafo diferencial__lista-paragrafo">See how your day-to-day tasks fit into the wider
+              vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </section>
+
+          <section>
+            <div class="numero-titulo">
+              <span class="diferencial__lista-numero">02</span>
+              <h4 class="diferencial__lista--titulo">
+                Advanced built-in reports
+              </h4>
+            </div>
+
+            <p class="home__paragrafo diferencial__lista-paragrafo">Set internal delivery estimates and track progress
+              toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </section>
+
+          <section>
+            <div class="numero-titulo">
+              <span class="diferencial__lista-numero">03</span>
+              <h4 class="diferencial__lista--titulo">
+                Everything you need in one place</h4>
+            </div>
+
+            <p class="home__paragrafo diferencial__lista-paragrafo">
+              Stop jumping from one service to another to communicate, store files,
+              track tasks and share documents. Manage offers an all-in-one team
+              productivity solution.
+            </p>
+          </section>
+
+        </article> <!--Fim Lista diferencial-->
+
+      </section><!--Fim seção diferencial -->
+
+      <section class="depoimentos "><!--Inicio seção depoimentos -->
+        <h3 class="depoimentos__titulo">What they’ve said</h3>
+
+
+
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+
+            <article class="depoimentos__card"><!--Anisha Li-->
+              <figure>
+                <img src="assets/images/avatar-anisha.png" alt="Foto de Anisha" class="depoimentos__card-foto">
+
+                <figcaption>Anisha Li</figcaption>
+
+              </figure>
+
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </article>
+
+            <article class="depoimentos__card first"> <!--Ali Bravo-->
+              <figure>
+                <img src="assets/images/avatar-ali.png" alt="Foto de Ali" class="depoimentos__card-foto">
+                <figcaption>Ali Bravo</figcaption>
+              </figure>
+              <p>“We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”
+              </p>
+            </article>
+
+            <article class="depoimentos__card"> <!--Richard Watts-->
+              <figure>
+                <img src="assets/images/avatar-richard.png" alt="Foto de Richard" class="depoimentos__card-foto">
+                <figcaption>Richard Watts</figcaption>
+              </figure>
+              <p>“Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </article>
+
+            <article class="depoimentos__card"> <!--Shanai Gough-->
+              <figure>
+                <img src="assets/images/avatar-shanai.png" alt="Foto de Shanai" class="depoimentos__card-foto">
+                <figcaption>Shanai Gough</figcaption>
+              </figure>
+              <p>“Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+              </p>
+            </article>
+
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
           </div>
 
-          <p class="home__paragrafo diferencial__lista-paragrafo">See how your day-to-day tasks fit into the wider
-            vision. Go from
-            tracking progress at the milestone level all the way done to the
-            smallest of details. Never lose sight of the bigger picture again.
-          </p>
-        </section>
-
-        <section>
-          <div class="numero-titulo">
-            <span class="diferencial__lista-numero">02</span>
-            <h4 class="diferencial__lista--titulo">
-              Advanced built-in reports
-            </h4>
-          </div>
-
-          <p class="home__paragrafo diferencial__lista-paragrafo">Set internal delivery estimates and track progress
-            toward company
-            goals. Our customisable dashboard helps you build out the reports
-            you need to keep key stakeholders informed.
-          </p>
-        </section>
-
-        <section>
-          <div class="numero-titulo">
-            <span class="diferencial__lista-numero">03</span>
-            <h4 class="diferencial__lista--titulo">
-              Everything you need in one place</h4>
-          </div>
-
-          <p class="home__paragrafo diferencial__lista-paragrafo">
-            Stop jumping from one service to another to communicate, store files,
-            track tasks and share documents. Manage offers an all-in-one team
-            productivity solution.
-          </p>
-        </section>
-
-      </article> <!--Fim Lista diferencial-->
-
-    </section><!--Fim seção diferencial -->
-
-    <section class="depoimentos "><!--Inicio seção depoimentos -->
-      <h3 class="depoimentos__titulo">What they’ve said</h3>
-
-
-
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-
-
-          <article class="depoimentos__card"><!--Anisha Li-->
-            <figure>
-              <img src="assets/images/avatar-anisha.png" alt="Foto de Anisha" class="depoimentos__card-foto">
-
-              <figcaption>Anisha Li</figcaption>
-
-            </figure>
-
-            <p>
-              “Manage has supercharged our team’s workflow. The ability to maintain
-              visibility on larger milestones at all times keeps everyone motivated.”
-            </p>
-          </article>
-
-          <article class="depoimentos__card first"> <!--Ali Bravo-->
-            <figure>
-              <img src="assets/images/avatar-ali.png" alt="Foto de Ali" class="depoimentos__card-foto">
-              <figcaption>Ali Bravo</figcaption>
-            </figure>
-            <p>“We have been able to cancel so many other subscriptions since using
-              Manage. There is no more cross-channel confusion and everyone is much
-              more focused.”
-            </p>
-          </article>
-
-          <article class="depoimentos__card"> <!--Richard Watts-->
-            <figure>
-              <img src="assets/images/avatar-richard.png" alt="Foto de Richard" class="depoimentos__card-foto">
-              <figcaption>Richard Watts</figcaption>
-            </figure>
-            <p>“Manage allows us to provide structure and process. It keeps us organized
-              and focused. I can’t stop recommending them to everyone I talk to!”
-            </p>
-          </article>
-
-          <article class="depoimentos__card"> <!--Shanai Gough-->
-            <figure>
-              <img src="assets/images/avatar-shanai.png" alt="Foto de Shanai" class="depoimentos__card-foto">
-              <figcaption>Shanai Gough</figcaption>
-            </figure>
-            <p>“Their software allows us to track, manage and collaborate on our projects
-              from anywhere. It keeps the whole team in-sync without being intrusive.”
-            </p>
-          </article>
-
-
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
           </div>
         </div>
 
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-      </div>
+        <button type="button" class="getStarted-button">Get Started</button>
 
-      <button type="button" class="getStarted-button">Get Started</button>
+      </section><!--Fim seção depoimentos -->
+    </div>
 
-    </section><!--Fim seção depoimentos -->
   </main>
 
   <section class="simplify">
@@ -306,6 +314,7 @@
   <!-- JAVASCRIPT -->
   <script src="assets/js/slide.js"></script>
   <script src="assets/js/validar-email.js"></script>
+  <script src="assets/js/blur.js"></script>
 
 </body>
 

@@ -35,7 +35,7 @@
 
 /* Estilos para telas menores */
 @media screen and (max-width: 768px) {
-    .header{
+    .header {
         align-items: flex-start;
         position: relative;
     }
@@ -43,20 +43,23 @@
     .navigation__list {
         align-items: center;
         background-color: #fff;
-        display: none; /* Só irá aparecer quando estiver check o menu-faketrigger*/
+        display: none;
+        /* Só irá aparecer quando estiver check o menu-faketrigger*/
         flex-direction: column;
         padding: 20px;
-        position: absolute;
+        position: fixed;
         right: 10px;
-        transition: all ease .2s; /*para o menu aparecer de uma  forma mais bonita*/
+        transition: all ease .2s;
+        /*para o menu aparecer de uma  forma mais bonita*/
         top: 60px;
-        width: 90%; 
+        width: 90%;
         z-index: 998;
-     
+
     }
 
-    .header .getStarted-button{
-        display: none; /* O botão get-started não aparecerá */
+    .header .getStarted-button {
+        display: none;
+        /* O botão get-started não aparecerá */
     }
 
     /* HAMBURGER************************************ */
@@ -75,7 +78,7 @@
     }
 
     /*vai aplicar no checkbok e  em seus irmaos (seleciona todos os elementos diretos) */
-   
+
     /* HAMBURGER */
     .menu .menu-lines {
         display: block;
@@ -93,12 +96,13 @@
         height: 5px;
         margin-bottom: 10px;
         width: 35px;
-        transition: all ease .2s; /*tempo para a transição*/
+        transition: all ease .2s;
+        /*tempo para a transição*/
 
     }
 
     /* Transformando as 3 linhas em X *******************/
- 
+
 
     /* linha 1 */
     .menu .menu-faketrigger:checked~.menu-lines span:nth-child(1) {
@@ -120,9 +124,29 @@
         transform: rotate(-45deg) scaleX(1.25);
     }
 
-    .menu .menu-faketrigger:checked~.navigation__list{
+    .menu .menu-faketrigger:checked~.navigation__list {
         display: flex;
     }
 
-    
+  
+
+    #menu-faketrigger:checked~.overlay {
+        opacity: 1;
+        pointer-events: all;
+        width: 100%;
+        position: fixed;
+        z-index: 3000;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity 400ms ease;
+        height: 100vh;
+        background: linear-gradient(27deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
 }

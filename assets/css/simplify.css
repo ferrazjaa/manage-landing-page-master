@@ -1,5 +1,10 @@
 .simplify{
     align-items: center;
+    background-color: var(--color-bright-red);
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-position: 12rem 94%;
+    background-repeat: repeat-y;
+
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     padding: 70px;
@@ -44,6 +49,10 @@
 }
 @media screen and (max-width:425px) {
     .simplify{
+        background-image: url(../images/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: initial;
+        
         grid-template-areas: 
         "paragrafo"
         "botao";

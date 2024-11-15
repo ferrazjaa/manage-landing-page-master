@@ -19,11 +19,31 @@ body {
     background-repeat: no-repeat;
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
-    background-position: top -101px right -16px;
-    background-size: 615px 672px;
+    /* background-position: top -182px right -220px; */
+    /* background-size: 675px 855px; */
+    background-position: top -108px right -159px;
+    background-size: 57% auto;
 }
 
 
+
+.segundo-background{
+    background: url(../images/bg-tablet-pattern.svg); 
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: -333px 324px;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-position: top -81px right -107px;
+        background-size: 102% auto;
+    }
+    
+    .segundo-background{
+        background: none;
+    }
+}
 
 .section-padding{
     padding: 0 7%;

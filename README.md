@@ -5,16 +5,16 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [O desafio (The challenge)](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Meu processo (My process)](#my-process)
+  - [ Construído com(Built with)](#built-with)
+  - [O que aprendi (What I learned)](#what-i-learned)
+  - [Desenvolvimento contínuo(Continued development)](#continued-development)
+  - [Recursos úteis (Useful resources)](#useful-resources)
+- [Autora (Author)](#author)
+- [Referências (Acknowledgments)](#acknowledgments)
 
 
 
@@ -91,18 +91,15 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
+### (Desenvolvimento Contínuo) Continued development
 
 - Aprender melhor a fazer o carousel 
 - Manipulação de arquivos svg
 
 
 
-### Useful resources
+### Recursos úteis (Useful resources)
 
 - [Figma](https://www.figma.com/) - Alterar a cor do logo para o rodapé e manter em svg. 
 - [Fontawesome](https://www.example.com) - Ícones para as redes sociais e assim poder escolher cor da fonte e hover.
@@ -124,3 +121,5 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - Slide versão dispositivos maiores adaptado de: [Automatic Image Slider in HTML and CSS only](https://www.thecoderashok.com/blog/automatic-image-slider-in-html-css-only#google_vignette)
 
 -[Background-position - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+
+- Menu hamburger adaptado de [Menu Hamburger Completo (só com CSS e técnica esquisita)](https://www.youtube.com/watch?v=n-bkT-R5E_4)

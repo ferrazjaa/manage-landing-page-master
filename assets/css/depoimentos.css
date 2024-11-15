@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 10%;
+    
 }
 
 .depoimentos button {
@@ -112,8 +113,10 @@
 @media screen and (max-width:1024px) {
     .depoimentos__card {
         width: 390px;
+        margin: 4% 7.5px;
     }
 
+    
     .slider {
         width: 400px;
     }
@@ -144,15 +147,15 @@
     }
 
     #radio2:checked~.first {
-        margin-left: -25.50%;
+        margin-left: -24.9%;
     }
 
     #radio3:checked~.first {
-        margin-left: -51.5%;
+        margin-left: -50.15%;
     }
 
     #radio4:checked~.first {
-        margin-left: -77.75%;
+        margin-left: -75.375%;
     }
 
     .navigation-auto div {
