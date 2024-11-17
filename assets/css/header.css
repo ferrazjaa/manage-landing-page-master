@@ -48,14 +48,16 @@
         flex-direction: column;
         padding: 20px;
         position: fixed;
-        right: 10px;
+        right: 20px;
         transition: all ease .2s;
-        /*para o menu aparecer de uma  forma mais bonita*/
-        top: 60px;
+        /*transição*/
+        top: 75px;
         width: 90%;
         z-index: 998;
 
     }
+
+
 
     .header .getStarted-button {
         display: none;
@@ -67,7 +69,7 @@
         cursor: pointer;
         display: block;
         height: 35px;
-        /*mesma altura do hmaburger*/
+        /*mesma altura do hamburger*/
         opacity: 0;
         /*Para não aparecer e deixar quem está atrás (hamburger) visível*/
         position: absolute;
@@ -128,25 +130,31 @@
         display: flex;
     }
 
-  
-
-    #menu-faketrigger:checked~.overlay {
-        opacity: 1;
-        pointer-events: all;
-        width: 100%;
-        position: fixed;
-        z-index: 3000;
-    }
-
     .overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* Cor escura translúcida */
         bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
         opacity: 0;
-        transition: opacity 400ms ease;
-        height: 100vh;
-        background: linear-gradient(27deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+        /* Invisível inicialmente */
+        pointer-events: none;
+        /* Não clicável */
+        transition: opacity 0.2s ease;
+        /* Transição suave */
+        z-index: 997;
+        /* Abaixo do menu */
     }
+
+    /* Exibir overlay quando o menu estiver aberto */
+    .menu-faketrigger:checked~.overlay {
+        opacity: 1;
+        /* Torna o overlay visível */
+        pointer-events: all;
+        /* Ativa interação */
+    }
+
 
 }
