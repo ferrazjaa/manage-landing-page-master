@@ -46,19 +46,19 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot da página versão desktop](assets\images\screenshot-desktop.png)
+![Screenshot da página versão desktop](assets/images/screenshot-desktop.png)
   
 
-![Screenshot da página versão mobile](assets\images\screenshot-mobile.png)
+![Screenshot da página versão mobile](assets/images/screenshot-mobile.png)
   
 
-![Screenshot da menu navegação](assets\images\menu-mobile.png)
+![Screenshot da menu navegação](assets/images/menu-mobile.png)
   
 
-![Screenshot de input email com erro](assets\images\email-nOk.png)
+![Screenshot de input email com erro](assets/images/email-nOk.png)
   
 
-![Screenshot de input email validado](assets\images\email-ok.png)
+![Screenshot de input email validado](assets/images/email-ok.png)
 
 
 ## My process
