@@ -1,26 +1,28 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+- This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+  
+  
+- Desafio proposto pelo curso [Descodificadas](https://moodle.descodificadas.com.br) - Trilha 3
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [O desafio (The challenge)](#the-challenge)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Meu processo (My process)](#my-process)
-  - [ Construído com(Built with)](#built-with)
-  - [O que aprendi (What I learned)](#what-i-learned)
-  - [Desenvolvimento contínuo(Continued development)](#continued-development)
-  - [Recursos úteis (Useful resources)](#useful-resources)
-- [Autora (Author)](#author)
-- [Referências (Acknowledgments)](#acknowledgments)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 
 
 ## Overview
 
-### O desafio (The challenge)
+### The challenge 
 
 #### <b>Português</b>
 Os usuários devem ser capazes de:
@@ -44,20 +46,20 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot da página versão desktop](assets\images\screenshot-desktop.png)
+  
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Screenshot da página versão mobile](assets\images\screenshot-mobile.png)
+  
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![Screenshot da menu navegação](assets\images\menu-mobile.png)
+  
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Screenshot de input email com erro](assets\images\email-nOk.png)
+  
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot de input email validado](assets\images\email-ok.png)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -73,40 +75,33 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- Uso de :before
+- Criar caixas modal com background
+- Alterar cor do svg através tanto do figma como VsCode
+- Manipulação do background com do background-position e background-size
 
 
-### (Desenvolvimento Contínuo) Continued development
 
-- Aprender melhor a fazer o carousel 
+
+### Continued development
+
+- Aprender melhor como fazer slider em diferentes dispositivos
 - Manipulação de arquivos svg
+- Desenvolvimento responsivo
+- Pseudo-elementos e classe
+- Positions
 
 
 
-### Recursos úteis (Useful resources)
+### Useful resources
 
 - [Figma](https://www.figma.com/) - Alterar a cor do logo para o rodapé e manter em svg. 
 - [Fontawesome](https://www.example.com) - Ícones para as redes sociais e assim poder escolher cor da fonte e hover.
+- [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - Documentação do CSS usada para verificar propriedades
 
 
 
-## Autora (Author)
+## Author
 
 - Website - [Jessica Ferraz](https://github.com/ferrazjaa)
 - Frontend Mentor - [@ferrazjaa](https://www.frontendmentor.io/profile/ferrazjaa)
@@ -114,12 +109,16 @@ const proudOfThisFunc = () => {
 
 
 
-## Referências (Acknowledgments)
+## Acknowledgments
 
 - Slide versão dispositivos mobile [Criando Slider com HTML, CSS e JavaScript](https://www.youtube.com/watch?v=BpzyuuPIEaQ) de [Sujeito Programador](https://www.youtube.com/@Sujeitoprogramador)
 
 - Slide versão dispositivos maiores adaptado de: [Automatic Image Slider in HTML and CSS only](https://www.thecoderashok.com/blog/automatic-image-slider-in-html-css-only#google_vignette)
 
--[Background-position - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+- [Background-position - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
 
 - Menu hamburger adaptado de [Menu Hamburger Completo (só com CSS e técnica esquisita)](https://www.youtube.com/watch?v=n-bkT-R5E_4)
+
+- [Escurecer o segundo plano ao abrir janela div modal](https://pt.stackoverflow.com/questions/133952/escurecer-o-segundo-plano-ao-abrir-janela-div-modal)
+
+- [::before](https://developer.mozilla.org/pt-BR/docs/Web/CSS/::before)

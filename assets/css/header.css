@@ -27,7 +27,7 @@
 
 
 
-.navigation__item:hover {
+.navigation__item:hover, .navigation__item:focus {
     color: var(--color-grayish-blue);
 }
 
@@ -158,3 +158,10 @@
 
 
 }
+
+ @media screen and (max-width: 376px){
+    .navigation__list{
+        right: 43px;
+        width: 85%;
+    }
+} 

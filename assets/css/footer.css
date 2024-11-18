@@ -37,7 +37,7 @@ footer {
     font-size: 22px;
 }
 
-.redes a:hover {
+.redes a:hover, .redes a:focus {
     color: var(--color-bright-red);
 }
 
@@ -63,7 +63,7 @@ footer {
     height: 100%;
 }
 
-.footer__menu__lista li:hover {
+.footer__menu__lista li:hover, .footer__menu__lista li:focus {
     color: var(--color-bright-red);
     cursor: pointer;
 }
@@ -119,7 +119,7 @@ footer {
     padding: 15px 22px;
 }
 
-.input-button button:hover {
+.input-button button:hover, .input-button button:focus {
     background: #f68e74;
 }
 

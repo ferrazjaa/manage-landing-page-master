@@ -36,8 +36,9 @@
     grid-area: botao;
 }
 
-.simplify button:hover{
+.simplify button:hover, .simplify button:focus{
     opacity: 0.9;
+    color: rgb(246, 142, 116);
 }
 
 @media screen and (max-width:768px) {
